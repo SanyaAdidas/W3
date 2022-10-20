@@ -1,0 +1,85 @@
+\hypertarget{TestBase_8cpp}{}\doxysection{Файл Complex\+Project/\+Unit\+Tests/\+Test\+Base.cpp}
+\label{TestBase_8cpp}\index{ComplexProject/UnitTests/TestBase.cpp@{ComplexProject/UnitTests/TestBase.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}../\+Include/\+Complex\+Class.\+h\char`\"{}}\newline
+Граф включаемых заголовочных файлов для Test\+Base.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{TestBase_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Макросы}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{TestBase_8cpp_a687984f47d8cce148d1b914d2b79612a}{EXIT\+\_\+\+SUCCESS}}~0
+\end{DoxyCompactItemize}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{TestBase_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Макросы}
+\mbox{\Hypertarget{TestBase_8cpp_a687984f47d8cce148d1b914d2b79612a}\label{TestBase_8cpp_a687984f47d8cce148d1b914d2b79612a}} 
+\index{TestBase.cpp@{TestBase.cpp}!EXIT\_SUCCESS@{EXIT\_SUCCESS}}
+\index{EXIT\_SUCCESS@{EXIT\_SUCCESS}!TestBase.cpp@{TestBase.cpp}}
+\doxysubsubsection{\texorpdfstring{EXIT\_SUCCESS}{EXIT\_SUCCESS}}
+{\footnotesize\ttfamily \#define EXIT\+\_\+\+SUCCESS~0}
+
+
+
+См. определение в файле \mbox{\hyperlink{TestBase_8cpp_source}{Test\+Base.\+cpp}} строка \mbox{\hyperlink{TestBase_8cpp_source_l00005}{5}}
+
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{TestBase_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{TestBase_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{TestBase.cpp@{TestBase.cpp}!main@{main}}
+\index{main@{main}!TestBase.cpp@{TestBase.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+
+
+См. определение в файле \mbox{\hyperlink{TestBase_8cpp_source}{Test\+Base.\+cpp}} строка \mbox{\hyperlink{TestBase_8cpp_source_l00014}{14}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014            \{}
+\DoxyCodeLine{00015     \mbox{\hyperlink{classComplex}{Complex}} FirstComplex;}
+\DoxyCodeLine{00016     \mbox{\hyperlink{classComplex}{Complex}} SecondComplex(-\/4);}
+\DoxyCodeLine{00017     \mbox{\hyperlink{classComplex}{Complex}} ThirdComplex(23.0, 45.9);}
+\DoxyCodeLine{00018     \mbox{\hyperlink{classComplex}{Complex}} FourthComplex = SecondComplex -\/ ThirdComplex;}
+\DoxyCodeLine{00019     \mbox{\hyperlink{classComplex}{Complex}} FifthComplex;}
+\DoxyCodeLine{00020 }
+\DoxyCodeLine{00021     cout << FirstComplex << \textcolor{stringliteral}{"{}, "{}} << SecondComplex << \textcolor{stringliteral}{"{}, "{}} << ThirdComplex << endl;}
+\DoxyCodeLine{00022 }
+\DoxyCodeLine{00023     FirstComplex = SecondComplex + ThirdComplex;}
+\DoxyCodeLine{00024 }
+\DoxyCodeLine{00025     cout << \textcolor{stringliteral}{"{}FirstComplex = SecondComplex + ThirdComplex, FirstComplex = "{}} << FirstComplex << endl;}
+\DoxyCodeLine{00026 }
+\DoxyCodeLine{00027     cout << \textcolor{stringliteral}{"{}FourthComplex = SecondComplex -\/ ThirdComplex, FourthComplex = "{}} << FourthComplex << endl;}
+\DoxyCodeLine{00028     cout << \textcolor{stringliteral}{"{}FourthComplex * FirstComplex = "{}} << (FourthComplex * FirstComplex) << endl;}
+\DoxyCodeLine{00029     cout << \textcolor{stringliteral}{"{}FourthComplex / 4.45 = "{}} << (FourthComplex / 4.45) << endl;}
+\DoxyCodeLine{00030 }
+\DoxyCodeLine{00031     cout << \textcolor{stringliteral}{"{}Enter complex number FifthComplex = "{}};}
+\DoxyCodeLine{00032     cin >> FifthComplex;}
+\DoxyCodeLine{00033 }
+\DoxyCodeLine{00034     FirstComplex += ThirdComplex + FifthComplex;}
+\DoxyCodeLine{00035 }
+\DoxyCodeLine{00036     cout << \textcolor{stringliteral}{"{}FifthComplex = "{}} << FifthComplex << \textcolor{stringliteral}{"{}\(\backslash\)nFirstComplex = "{}} << FirstComplex << endl;}
+\DoxyCodeLine{00037     }
+\DoxyCodeLine{00038     \textcolor{keywordflow}{return} \mbox{\hyperlink{TestBase_8cpp_a687984f47d8cce148d1b914d2b79612a}{EXIT\_SUCCESS}};}
+\DoxyCodeLine{00039 \}}
+
+\end{DoxyCode}

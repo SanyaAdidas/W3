@@ -1,0 +1,213 @@
+\hypertarget{ComplexClass_8cpp}{}\doxysection{Файл Complex\+Project/\+Core/\+Complex\+Class.cpp}
+\label{ComplexClass_8cpp}\index{ComplexProject/Core/ComplexClass.cpp@{ComplexProject/Core/ComplexClass.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include \char`\"{}../\+Include/\+Complex\+Class.\+h\char`\"{}}\newline
+Граф включаемых заголовочных файлов для Complex\+Class.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{ComplexClass_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+istream \& \mbox{\hyperlink{ComplexClass_8cpp_aac626d939c2a33db674327a2c0b192b8}{operator$>$$>$}} (istream \&Stream, \mbox{\hyperlink{classComplex}{Complex}} \&Temporary\+Complex)
+\item 
+ostream \& \mbox{\hyperlink{ComplexClass_8cpp_a797dcf79f12bdc1fb4b14099a4e9f569}{operator$<$$<$}} (ostream \&Stream, \mbox{\hyperlink{classComplex}{Complex}} \&Temporary\+Complex)
+\item 
+\mbox{\hyperlink{classComplex}{Complex}} \mbox{\hyperlink{ComplexClass_8cpp_a4204b5aa6ac78140bd358c76bbd246f4}{operator+}} (const double \&Real\+Part, const \mbox{\hyperlink{classComplex}{Complex}} \&Temporary\+Complex)
+\item 
+\mbox{\hyperlink{classComplex}{Complex}} \mbox{\hyperlink{ComplexClass_8cpp_a1d01ae6a9a639a2a1add114bfc6f6cd0}{operator-\/}} (const double \&Real\+Part, const \mbox{\hyperlink{classComplex}{Complex}} \&Temporary\+Complex)
+\item 
+\mbox{\hyperlink{classComplex}{Complex}} \mbox{\hyperlink{ComplexClass_8cpp_a95365fc3de8e1b9922102f8f9ba61238}{operator$\ast$}} (const double \&Value, const \mbox{\hyperlink{classComplex}{Complex}} \&Temporary\+Complex)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{ComplexClass_8cpp_a95365fc3de8e1b9922102f8f9ba61238}\label{ComplexClass_8cpp_a95365fc3de8e1b9922102f8f9ba61238}} 
+\index{ComplexClass.cpp@{ComplexClass.cpp}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!ComplexClass.cpp@{ComplexClass.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComplex}{Complex}} operator$\ast$ (\begin{DoxyParamCaption}\item[{const double \&}]{Value,  }\item[{const \mbox{\hyperlink{classComplex}{Complex}} \&}]{Temporary\+Complex }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Value} & \\
+\hline
+{\em Temporary\+Complex} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+
+
+См. определение в файле \mbox{\hyperlink{ComplexClass_8cpp_source}{Complex\+Class.\+cpp}} строка \mbox{\hyperlink{ComplexClass_8cpp_source_l00334}{334}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00334                                                                          \{}
+\DoxyCodeLine{00335     \mbox{\hyperlink{classComplex}{Complex}} Result;}
+\DoxyCodeLine{00336 }
+\DoxyCodeLine{00337     Result.\mbox{\hyperlink{classComplex_afa6ee69d12276b65739dfb5e4feabcf2}{\_RealPart}} = Value * TemporaryComplex.\mbox{\hyperlink{classComplex_afa6ee69d12276b65739dfb5e4feabcf2}{\_RealPart}};}
+\DoxyCodeLine{00338     Result.\mbox{\hyperlink{classComplex_a4a4c11edd1ef4f18263ba8c7b9f99b92}{\_ImaginaryPart}} = Value * TemporaryComplex.\mbox{\hyperlink{classComplex_a4a4c11edd1ef4f18263ba8c7b9f99b92}{\_ImaginaryPart}};}
+\DoxyCodeLine{00339 }
+\DoxyCodeLine{00340     \textcolor{keywordflow}{return} Result;}
+\DoxyCodeLine{00341 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ComplexClass_8cpp_a4204b5aa6ac78140bd358c76bbd246f4}\label{ComplexClass_8cpp_a4204b5aa6ac78140bd358c76bbd246f4}} 
+\index{ComplexClass.cpp@{ComplexClass.cpp}!operator+@{operator+}}
+\index{operator+@{operator+}!ComplexClass.cpp@{ComplexClass.cpp}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComplex}{Complex}} operator+ (\begin{DoxyParamCaption}\item[{const double \&}]{Real\+Part,  }\item[{const \mbox{\hyperlink{classComplex}{Complex}} \&}]{Temporary\+Complex }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Real\+Part} & \\
+\hline
+{\em Temporary\+Complex} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+
+
+См. определение в файле \mbox{\hyperlink{ComplexClass_8cpp_source}{Complex\+Class.\+cpp}} строка \mbox{\hyperlink{ComplexClass_8cpp_source_l00304}{304}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00304                                                                             \{}
+\DoxyCodeLine{00305     \mbox{\hyperlink{classComplex}{Complex}} Result;}
+\DoxyCodeLine{00306     }
+\DoxyCodeLine{00307     Result.\mbox{\hyperlink{classComplex_afa6ee69d12276b65739dfb5e4feabcf2}{\_RealPart}} = RealPart + TemporaryComplex.\mbox{\hyperlink{classComplex_afa6ee69d12276b65739dfb5e4feabcf2}{\_RealPart}};}
+\DoxyCodeLine{00308     Result.\mbox{\hyperlink{classComplex_a4a4c11edd1ef4f18263ba8c7b9f99b92}{\_ImaginaryPart}} = TemporaryComplex.\mbox{\hyperlink{classComplex_a4a4c11edd1ef4f18263ba8c7b9f99b92}{\_ImaginaryPart}};}
+\DoxyCodeLine{00309 }
+\DoxyCodeLine{00310     \textcolor{keywordflow}{return} Result;}
+\DoxyCodeLine{00311 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ComplexClass_8cpp_a1d01ae6a9a639a2a1add114bfc6f6cd0}\label{ComplexClass_8cpp_a1d01ae6a9a639a2a1add114bfc6f6cd0}} 
+\index{ComplexClass.cpp@{ComplexClass.cpp}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!ComplexClass.cpp@{ComplexClass.cpp}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComplex}{Complex}} operator-\/ (\begin{DoxyParamCaption}\item[{const double \&}]{Real\+Part,  }\item[{const \mbox{\hyperlink{classComplex}{Complex}} \&}]{Temporary\+Complex }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Real\+Part} & \\
+\hline
+{\em Temporary\+Complex} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+
+
+См. определение в файле \mbox{\hyperlink{ComplexClass_8cpp_source}{Complex\+Class.\+cpp}} строка \mbox{\hyperlink{ComplexClass_8cpp_source_l00319}{319}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00319                                                                             \{}
+\DoxyCodeLine{00320     \mbox{\hyperlink{classComplex}{Complex}} Result;}
+\DoxyCodeLine{00321 }
+\DoxyCodeLine{00322     Result.\mbox{\hyperlink{classComplex_afa6ee69d12276b65739dfb5e4feabcf2}{\_RealPart}} = RealPart -\/ TemporaryComplex.\mbox{\hyperlink{classComplex_afa6ee69d12276b65739dfb5e4feabcf2}{\_RealPart}};}
+\DoxyCodeLine{00323     Result.\mbox{\hyperlink{classComplex_a4a4c11edd1ef4f18263ba8c7b9f99b92}{\_ImaginaryPart}} = -\/TemporaryComplex.\mbox{\hyperlink{classComplex_a4a4c11edd1ef4f18263ba8c7b9f99b92}{\_ImaginaryPart}};}
+\DoxyCodeLine{00324 }
+\DoxyCodeLine{00325     \textcolor{keywordflow}{return} Result;}
+\DoxyCodeLine{00326 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ComplexClass_8cpp_a797dcf79f12bdc1fb4b14099a4e9f569}\label{ComplexClass_8cpp_a797dcf79f12bdc1fb4b14099a4e9f569}} 
+\index{ComplexClass.cpp@{ComplexClass.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!ComplexClass.cpp@{ComplexClass.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{Stream,  }\item[{\mbox{\hyperlink{classComplex}{Complex}} \&}]{Temporary\+Complex }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Stream} & \\
+\hline
+{\em Temporary\+Complex} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+
+
+См. определение в файле \mbox{\hyperlink{ComplexClass_8cpp_source}{Complex\+Class.\+cpp}} строка \mbox{\hyperlink{ComplexClass_8cpp_source_l00286}{286}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00286                                                                  \{}
+\DoxyCodeLine{00287     Stream << TemporaryComplex.\mbox{\hyperlink{classComplex_afa6ee69d12276b65739dfb5e4feabcf2}{\_RealPart}};}
+\DoxyCodeLine{00288 }
+\DoxyCodeLine{00289     \textcolor{keywordflow}{if} (!(TemporaryComplex.\mbox{\hyperlink{classComplex_a4a4c11edd1ef4f18263ba8c7b9f99b92}{\_ImaginaryPart}} < 0)) \{}
+\DoxyCodeLine{00290         Stream << \textcolor{charliteral}{'+'};}
+\DoxyCodeLine{00291     \}}
+\DoxyCodeLine{00292     }
+\DoxyCodeLine{00293     Stream << TemporaryComplex.\mbox{\hyperlink{classComplex_a4a4c11edd1ef4f18263ba8c7b9f99b92}{\_ImaginaryPart}} << \textcolor{charliteral}{'i'};}
+\DoxyCodeLine{00294     }
+\DoxyCodeLine{00295     \textcolor{keywordflow}{return} Stream;}
+\DoxyCodeLine{00296 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ComplexClass_8cpp_aac626d939c2a33db674327a2c0b192b8}\label{ComplexClass_8cpp_aac626d939c2a33db674327a2c0b192b8}} 
+\index{ComplexClass.cpp@{ComplexClass.cpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!ComplexClass.cpp@{ComplexClass.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{Stream,  }\item[{\mbox{\hyperlink{classComplex}{Complex}} \&}]{Temporary\+Complex }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Stream} & \\
+\hline
+{\em Temporary\+Complex} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+
+
+См. определение в файле \mbox{\hyperlink{ComplexClass_8cpp_source}{Complex\+Class.\+cpp}} строка \mbox{\hyperlink{ComplexClass_8cpp_source_l00270}{270}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00270                                                                  \{}
+\DoxyCodeLine{00271     \textcolor{keywordtype}{char} TemporaryBuffer[256];}
+\DoxyCodeLine{00272 }
+\DoxyCodeLine{00273     Stream}
+\DoxyCodeLine{00274         >> TemporaryComplex.\mbox{\hyperlink{classComplex_afa6ee69d12276b65739dfb5e4feabcf2}{\_RealPart}}}
+\DoxyCodeLine{00275         >> TemporaryComplex.\mbox{\hyperlink{classComplex_a4a4c11edd1ef4f18263ba8c7b9f99b92}{\_ImaginaryPart}} >> TemporaryBuffer;}
+\DoxyCodeLine{00276 }
+\DoxyCodeLine{00277     \textcolor{keywordflow}{return} Stream;}
+\DoxyCodeLine{00278 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,41 @@
+\hypertarget{TestBase_8cpp_source}{}\doxysection{Test\+Base.\+cpp}
+\label{TestBase_8cpp_source}\index{ComplexProject/UnitTests/TestBase.cpp@{ComplexProject/UnitTests/TestBase.cpp}}
+\mbox{\hyperlink{TestBase_8cpp}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}../Include/ComplexClass.h"{}}}
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00004}00004 \textcolor{preprocessor}{\#ifndef EXIT\_SUCCESS}}
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00005}\mbox{\hyperlink{TestBase_8cpp_a687984f47d8cce148d1b914d2b79612a}{00005}} \textcolor{preprocessor}{\#define EXIT\_SUCCESS 0}}
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00006}00006 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00008}00008 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00014}\mbox{\hyperlink{TestBase_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{00014}} \textcolor{keywordtype}{int} \mbox{\hyperlink{TestBase_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}() \{}
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00015}00015     \mbox{\hyperlink{classComplex}{Complex}} FirstComplex;}
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00016}00016     \mbox{\hyperlink{classComplex}{Complex}} SecondComplex(-\/4);}
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00017}00017     \mbox{\hyperlink{classComplex}{Complex}} ThirdComplex(23.0, 45.9);}
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00018}00018     \mbox{\hyperlink{classComplex}{Complex}} FourthComplex = SecondComplex -\/ ThirdComplex;}
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00019}00019     \mbox{\hyperlink{classComplex}{Complex}} FifthComplex;}
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00021}00021     cout << FirstComplex << \textcolor{stringliteral}{"{}, "{}} << SecondComplex << \textcolor{stringliteral}{"{}, "{}} << ThirdComplex << endl;}
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00023}00023     FirstComplex = SecondComplex + ThirdComplex;}
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00025}00025     cout << \textcolor{stringliteral}{"{}FirstComplex = SecondComplex + ThirdComplex, FirstComplex = "{}} << FirstComplex << endl;}
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00027}00027     cout << \textcolor{stringliteral}{"{}FourthComplex = SecondComplex -\/ ThirdComplex, FourthComplex = "{}} << FourthComplex << endl;}
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00028}00028     cout << \textcolor{stringliteral}{"{}FourthComplex * FirstComplex = "{}} << (FourthComplex * FirstComplex) << endl;}
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00029}00029     cout << \textcolor{stringliteral}{"{}FourthComplex / 4.45 = "{}} << (FourthComplex / 4.45) << endl;}
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00031}00031     cout << \textcolor{stringliteral}{"{}Enter complex number FifthComplex = "{}};}
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00032}00032     cin >> FifthComplex;}
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00034}00034     FirstComplex += ThirdComplex + FifthComplex;}
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00036}00036     cout << \textcolor{stringliteral}{"{}FifthComplex = "{}} << FifthComplex << \textcolor{stringliteral}{"{}\(\backslash\)nFirstComplex = "{}} << FirstComplex << endl;}
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00037}00037     }
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00038}00038     \textcolor{keywordflow}{return} \mbox{\hyperlink{TestBase_8cpp_a687984f47d8cce148d1b914d2b79612a}{EXIT\_SUCCESS}};}
+\DoxyCodeLine{\Hypertarget{TestBase_8cpp_source_l00039}00039 \}}
+
+\end{DoxyCode}
